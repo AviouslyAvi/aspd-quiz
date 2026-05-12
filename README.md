@@ -33,28 +33,13 @@ The whole site is statically prerendered (no server functions), so it sits comfo
 ## Project structure
 
 ```
-app/
-  layout.tsx          Root layout (light bg, system font)
-  page.tsx            Landing page with disclaimer + Begin CTA
-  quiz/page.tsx       30-question form, sticky progress bar
-  results/page.tsx    Score + percentage + tier + criterion breakdown
-  globals.css         Tailwind v4 + monochrome design tokens
-lib/
-  questions.ts        30 items + reverse-flag mapping
-  criteria.ts         DSM-5 criterion → item-id map
-  descriptions.ts     11 tier descriptions
-  scoring.ts          Pure scoring (reverse + total + percentage + criterion means)
-  markdown.ts         Builds the .md report for download
-  cn.ts               clsx + tailwind-merge helper
-  navigate.ts         View Transitions wrapper
-  __tests__/scoring.test.ts
-components/
-  QuestionItem.tsx    One question + 1–5 Likert chip row (memoized)
-  DisclaimerBanner.tsx
-  ProgressBar.tsx     Sticky bottom bar w/ scroll-aware blur + spring fill
-  DownloadButton.tsx  Client-side Blob → .md download
-  AnimatedNumber.tsx  Tween-up score countup
+app/          Next.js App Router pages: /, /quiz, /results, layout, globals.css
+components/   Reusable UI (QuestionItem, ProgressBar, AnimatedNumber, etc.)
+lib/          Pure logic: questions, scoring, tier descriptions, markdown builder + tests
+public/       Static assets
 ```
+
+For the full routing map (which folder does what, where to read for a given task), see `CLAUDE.md` at the repo root and the per-folder `CONTEXT.md` files. `BRIEF.md` captures origin + design decisions; `HANDOFF.md` is the resume-from-here doc.
 
 ## How scoring works
 
