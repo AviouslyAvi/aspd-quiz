@@ -1,6 +1,6 @@
-# ASPD Self-Reflection Quiz
+# ASPD Self-Inquiry Questionnaire
 
-An interactive web version of a 30-item self-reflection questionnaire derived from the DSM-5 criteria for Antisocial Personality Disorder. Built with Next.js 15, React 19, Tailwind v4, and TypeScript. Designed for free-tier Vercel deployment.
+An interactive 30-item self-inquiry questionnaire that measures how closely your behavioral patterns mirror the clinical markers of Antisocial Personality Disorder. Items are derived from the DSM-5 ASPD criteria and the PCL-R (Hare Psychopathy Checklist-Revised). Built with Next.js 15, React 19, Tailwind v4, and TypeScript. Designed for free-tier Vercel deployment.
 
 **Live:** https://aspd-quiz.vercel.app
 

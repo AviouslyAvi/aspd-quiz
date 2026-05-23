@@ -31,14 +31,14 @@ export default function LandingPage() {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="text-sm font-medium uppercase tracking-[0.14em] text-[var(--color-muted)]"
         >
-          Personality &amp; Life Experience
+          Antisocial Personality Disorder (ASPD) Self-Inquiry Questionnaire
         </motion.p>
         <motion.h1
           variants={fadeUp}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-[40px] font-semibold leading-[1.08] tracking-[-0.02em] text-[var(--color-ink)] sm:text-[56px]"
         >
-          A questionnaire about how you relate to rules, others, and yourself.
+          A self-inquiry test to measure how closely your behavioral patterns mirror the clinical markers of ASPD.
         </motion.h1>
         <motion.p
           variants={fadeUp}
@@ -46,8 +46,8 @@ export default function LandingPage() {
           className="text-[18px] leading-relaxed text-[var(--color-muted)] [text-wrap:pretty]"
         >
           Thirty short statements. About ten minutes. The questionnaire is derived from the
-          DSM-5 criteria for Antisocial Personality Disorder and is intended for personal
-          reflection only.
+          DSM-5 criteria for Antisocial Personality Disorder and the PCL-R (Hare Psychopathy
+          Checklist-Revised), and is intended for personal reflection only.
         </motion.p>
       </motion.header>
 
