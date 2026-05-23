@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Personality and Life Experience Questionnaire",
+  title: "Antisocial Personality Disorder (ASPD) Self-Inquiry Questionnaire",
   description:
-    "A self-reflection questionnaire derived from DSM-5 ASPD criteria. Educational tool, not a clinical diagnosis.",
+    "A 30-item self-inquiry questionnaire measuring how closely your behavioral patterns mirror the clinical markers of Antisocial Personality Disorder. Derived from DSM-5 ASPD criteria and the PCL-R. Educational tool, not a clinical diagnosis.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
